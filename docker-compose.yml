@@ -10,7 +10,6 @@ services:
     environment:
       MINIO_ROOT_USER: minioadmin  # Default root user
       MINIO_ROOT_PASSWORD: minioadmin  # Default root password
-      MINIO_DEFAULT_BUCKETS: demo-bucket
     volumes:
       - minio_data:/data  # Persistent storage for MinIO data
     command: server /data --console-address ":9001"
